@@ -11,4 +11,9 @@ public class ABCBank extends Bank {
         System.out.println("ABC打开了银行账户");
         return account;
     }
+
+    @Override
+    public void showType() {
+        account.showType();
+    }
 }

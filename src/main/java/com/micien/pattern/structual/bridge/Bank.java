@@ -11,4 +11,8 @@ public abstract class Bank {
         return account;
     }
 
+    public void showType(){
+        System.out.println("抽象银行有初始类型");
+    }
+
 }
