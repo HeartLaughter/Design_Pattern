@@ -11,4 +11,9 @@ public class ICBCBank extends Bank {
         System.out.println("ICBC打开了银行账户");
         return account;
     }
+
+    @Override
+    public void showType() {
+        account.showType();
+    }
 }

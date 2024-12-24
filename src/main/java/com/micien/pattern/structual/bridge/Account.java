@@ -5,7 +5,10 @@ package com.micien.pattern.structual.bridge;
 Geely 是bank中注入account，我试试Account中注入Bank;但是如果把account
 * */
 public abstract class Account {
-
+    private String typeName;
+    Account(String typeName) {
+        this.typeName = typeName;
+    }
 
     //你看，写到这里就很奇怪，只有银行才能打开账户，而不是账户里打开账户？假如你这函数写在这里，你account类传自己Account类，太奇怪
 /*    Account openAccount(Account account) {
